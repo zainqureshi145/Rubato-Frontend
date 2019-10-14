@@ -1,0 +1,95 @@
+@import '/constants.module';
+
+.popper {
+  background: $light-grey;
+  //color: white;
+  //max-width: 250px;
+  //border-radius: 4px;
+  //box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  //padding: 5px;
+  //z-index: 10001;
+  //width: 100%;
+  //height: 100%;
+  position: relative;
+  border: 1px solid $light-grey;
+  padding: $large-margin;
+  border-radius: 4px;
+  @include heavy-box-shadow;
+  top: 50px !important;
+  left: 105px !important;
+  z-index: 2 !important;
+}
+
+.arrow {
+  position: absolute;
+  height: 8px;
+  width: 17px;
+
+  border: 11px solid transparent;
+
+  &::before {
+    content: '';
+    margin: auto;
+    display: block;
+    border: 11px solid;
+    position: absolute;
+  }
+
+  &[data-placement='top'] {
+    bottom: -22px;
+    border-top-color: $light-grey;
+    &::before {
+      left: -10px;
+      top: -12px;
+      border: 10px solid transparent;
+      border-top-color: $light-grey;
+    }
+  }
+
+  &[data-placement='right'] {
+    left: -22px;
+    border-right-color: $light-grey;
+    &::before {
+      top: -11px;
+      left: -10px;
+      border: 11px solid transparent;
+      border-right-color: $light-grey;
+    }
+  }
+
+  &[data-placement='left'] {
+    right: -22px;
+    border-left-color: $light-grey;
+    &::before {
+      top: -11px;
+      right: -10px;
+      border: 11px solid transparent;
+      border-left-color: $light-grey;
+    }
+  }
+
+  &[data-placement='bottom']{
+    top: -23px;
+    border-bottom-color: $light-grey;
+
+    &::before {
+      left: -11px;
+      top: -10px;
+      border: 11px solid transparent;
+      border-bottom-color: $light-grey;
+    }
+  }
+
+  &[data-placement='bottom-start'] {
+    top: -23px;
+    border-bottom-color: $light-grey;
+    transform: translateX(-350px);
+
+    &::before {
+      left: -11px;
+      top: -10px;
+      border: 11px solid transparent;
+      border-bottom-color: $light-grey;
+    }
+  }
+}

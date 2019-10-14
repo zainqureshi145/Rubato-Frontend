@@ -1,0 +1,25 @@
+$phone-break: 480px;
+
+$quick-start-ease-out-cubic: cubic-bezier(0.19, 1, 0.22, 1);
+$quick-start-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+
+@mixin heavy-box-shadow() {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+}
+@mixin medium-box-shadow {
+  box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.5);
+}
+@mixin box-shadow() {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+//colors
+$black-heavy-transparent: rgba(0, 0, 0, 0.43);
+$light-grey: #c8c8c8;
+$light-border-color : rgba(200, 200, 200, 0.7);
+$popper-color: #222;
+$blue-grey: #607d8b;
+
+
+//constants
+$large-margin: 18px;
+$normal-margin: 12px;

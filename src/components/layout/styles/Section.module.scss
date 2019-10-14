@@ -1,0 +1,33 @@
+.root {
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  height: 3.5rem;
+  align-items: center;
+
+  > span {
+    flex: 1 1;
+    align-self: flex-start;
+    position: relative;
+    color: #585858;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+.underline {
+  width: calc(100% - 140px);
+  height: 1px;
+  position: absolute;
+  background-color: rgba(200, 200, 200, 0.7);
+  top: 50%;
+  left: 0;
+
+  &.fullWidth {
+    width: 100% !important;
+  }
+}

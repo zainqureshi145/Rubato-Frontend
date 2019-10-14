@@ -1,0 +1,27 @@
+@import '/constants.module';
+
+.item {
+  //border: solid 1px $light-grey;
+  border-radius: 7px;
+  background-color: white;
+  margin-bottom: $normal-margin;
+  padding: $normal-margin $normal-margin $normal-margin;
+  transition: all 0.1s;
+  justify-content: space-between;
+  @include box-shadow;
+  &:hover {
+    margin-top: -2px;
+    @include medium-box-shadow;
+  }
+  //&:nth-of-type(even) {
+  //  background: $light-grey;
+  //}
+}
+
+.deleteButton {
+  margin: 35px 0 8px 0;
+}
+
+.text {
+  margin-top: $large-margin;
+}
